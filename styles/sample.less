@@ -1,0 +1,156 @@
+body {
+ background-color: @lightColor;
+ background-image: url(../images/pattern1.gif);
+ color: @darkColor;
+ font-family: 'Alegreya Sans', sans-serif;
+ font-size: 16px;
+ line-height: 1.5em;
+}
+
+header {
+ background-color: @color5;
+ background-image: url(../images/honeybadger_lg.jpg);
+ background-size: cover;
+ color: @lightColor;
+ padding: 3em 1.5em;
+ h1 {
+ .headerFontAttributes('Francois One', sans-serif; @lightColor; 2em);
+ text-shadow: 0 0 5px #000;
+ }
+}
+
+nav {
+ background-color: @color4;
+ color: @lightColor;
+ background-image: url(../images/pattern2.gif);
+ background-repeat: repeat-x;
+ background-position: center;
+ padding: 1em;
+ a {
+ .linkColors(@lightColor);
+ }
+ div {
+ max-width: 300px;
+ margin: 0 auto;
+ text-align: center;
+ ul {
+ li {
+ display: inline;
+ list-style-type: none;
+ margin-left: 3em;
+ &:first-child {
+ margin-left: 0;
+ }
+ }
+ }
+ }
+}
+
+main {
+ background-color: @lightColor;
+ padding: 1.5em;
+ a {
+ .linkColors(@color3);
+ }
+ h2 {
+ .headerFontAttributes('Francois One', sans-serif; @darkColor; 1.5em);
+ }
+ h3 {
+ .headerFontAttributes('Francois One', sans-serif; @darkColor; 1.2em);
+ }
+ p, li {
+ .textStyling('Alegreya Sans', sans-serif; @darkColor; 1.25em;);
+ }
+ p, ul {
+ margin-bottom: 1.25em;
+ }
+ p {
+ img {
+ display: block;
+ margin: 0 auto;
+ }
+ }
+ ul {
+ li {
+ margin-left: 2em;
+ list-style-type: disc;
+ }
+ }
+}
+
+footer {
+ background-color: @color5;
+ background-image: url(../images/pattern1.gif);
+ background-position: top;
+ background-repeat: repeat-x;
+ color: @lightColor;
+ padding: 5em 1.5em 1.5em;
+ a {
+ .linkColors(@lightColor);
+ }
+ h2 {
+ .headerFontAttributes('Francois One', sans-serif; @lightColor; 1.2em);
+ }
+ h3 {
+ .headerFontAttributes('Francois One', sans-serif; @lightColor; 1em);
+ }
+ #news {
+ ul {
+ padding: 1em 0;
+ li {
+ display: block;
+ list-style-type: circle;
+ }
+ }
+ }
+ #socialmedia {
+ ul {
+ padding: 1em 0;
+ li {
+ display: inline;
+ list-style-type: none;
+ margin-left: 3em;
+ img {
+ -moz-filter: brightness(0) invert(1);
+ -webkit-filter: brightness(0) invert(1);
+ filter: brightness(0) invert(1);
+ width: 3em;
+ }
+ &:first-child {
+ margin-left: 0;
+ }
+ }
+ }
+ }
+}
+
+/*
+
+TABLET (PORTRAIT) STYLESHEET
+
+*/
+
+@media only screen and (min-width: 481px) {
+ main {
+ p {
+ img {
+ float: right;
+ max-width: 50%;
+ margin-left: 1em;
+ }
+ }
+ }
+}
+
+
+/*
+
+DESKTOP STYLESHEET
+
+*/
+
+@media only screen and (min-width: 1025px) {
+ body {
+ font-size: 18px;
+ }
+}

@@ -1,0 +1,495 @@
+/* File Name: style.css
+Date: 2/11/17
+Programmer: Jeanie Housden */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Reset --------------------------------------------------------------------------------------- */
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@media only screen and (min-width: 380px) {
+    
+    
+
+
+body {
+	text-align: center; 
+    font-size: .5em;
+	margin: auto;
+	padding: auto;
+    line-height: .75em;
+}
+
+p   {
+    text-align: center; 
+    }
+
+h3 {
+	font-size: 1em;
+	line-height: 1.125;
+	margin: 1.125em 0 0.5em 0;
+}
+
+h1, h2 {
+	font-size: .75em;
+	line-height: 1;
+    display: inline-block;
+	margin: 1.125em 0 0.5em 0;
+}
+
+
+
+
+
+
+
+}
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) {
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /Reset -------------------------------------------------------------------------------------- */
+
+/* Elements ------------------------------------------------------------------------------------ */
+
+    
+body {
+	background: #A39F93;
+	color: #000000;
+	font-family: "Josefin Sans", Geneva, sans-serif;
+	font-size: 1.25em;
+	margin: 1em auto;
+	max-width: 60em;
+	padding: 0 1em;
+    line-height: 1.5em;
+}
+
+a {
+	color: #627FC1;
+}
+
+header {
+    
+
+}
+
+header img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
+img {
+  
+	margin: 1em auto;
+	max-width: 100%;
+    display:inline-block;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    
+	
+   
+}
+
+/* /Elements ----------------------------------------------------------------------------------- */
+
+/* Classes ------------------------------------------------------------------------------------- */
+
+.box {
+	background: white;
+	border-radius: 3px;
+	color: #444;
+	padding: 1em 1.25em;
+}
+
+/* /Classes ------------------------------------------------------------------------------------ */
+
+/* Basic Typography ---------------------------------------------------------------------------- */
+
+p {
+	line-height: 2em;
+	margin: 1.125em 0;
+}
+
+h3 {
+	font-size: 2em;
+	line-height: 1.125;
+	margin: 1.125em 0 0.5em 0;
+}
+
+h1, h2 {
+	font-size: 1.5em;
+	line-height: 1.125;
+    display: inline-block;
+	margin: 1.125em 0 0.5em 0;
+}
+
+
+
+ul {
+	list-style-type: circle;
+	margin: 1.125em;
+}
+
+ol {
+	list-style-type: decimal;
+	margin: 1.125em;
+}
+
+li {
+	line-height: 1.5;
+	margin: 0.5em;
+}
+
+/* /Basic Typography --------------------------------------------------------------------------- */
+
+/* Navigation ---------------------------------------------------------------------------------- */
+
+nav {
+	margin: 2em 0;
+}
+
+nav ul {
+	
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+    background: url(background.gif) #f2eeef bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    border:2px solid #627FC1;
+    border-radius: 5px 5px 5px 5px;
+    color: #0d2474;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+	color: #C05D5B;
+}
+
+        
+nav {
+ margin: 2em 0;    
+ background: url(background.gif) #f2eeef bottom left repeat-x;
+ padding: 1em;
+ a {
+    background: url(background.gif) #f2eeef bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    border:2px solid @color4;
+    border-radius: 5px 5px 5px 5px;
+    color: #0d2474;
+    text-decoration: none;
+    text-align: center;     
+ }
+ div {
+ max-width: 300px;
+ text-align: center;
+ ul {
+ li {
+ display: inline-block;
+ list-style-type: none;
+ margin-left: 3em;
+ &:first-child {
+ margin-left: 0;
+ }
+ }
+ }
+ }
+}
+        
+        
+        nav {
+ background: url(background.gif) #f2eeef bottom left repeat-x;
+ padding: 1em;
+ a {
+ display: block;     
+ }
+ div {
+ max-width: 300px;
+ margin: 2em 0;
+ text-align: center;
+ ul {
+ li {
+ display: inline-block;
+ list-style-type: none;
+ margin-left: 3em;
+ &:first-child {
+ margin-left: 0;
+ }
+ }
+ }
+ }
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+/* /Navigation --------------------------------------------------------------------------------- */
+
+
+
+/* /Gallery ------------------------------------------------------------------------------------ */
+
+
+
+/* Navigation tooltips */
+#navTip {
+	cursor: default;
+	background-color: #627FC1;
+	border-radius: 6px;
+	color: #fff;
+	display: none;
+	padding: 10px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 2147483647;
+}
+#navTip:before {
+	content: "";
+	position: absolute;
+}
+#navTip.n:before, #navTip.s:before {
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	left: 50%;
+	margin-left: -5px;
+}
+#navTip.e:before, #navTip.w:before {
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	margin-top: -5px;
+	top: 50%;
+}
+#navTip.n:before {
+	border-top: 10px solid #627FC1;
+	bottom: -10px;
+}
+#navTip.e:before {
+	border-right: 10px solid #627FC1;
+	left: -10px;
+}
+#navTip.s:before {
+	border-bottom: 10px solid #627FC1;
+	top: -10px;
+}
+#navTip.w:before {
+	border-left: 10px solid #C05D4A;
+	right: -10px;
+}
+#navTip.ne:before, #navTip.se:before {
+	border-right: 10px solid transparent;
+	border-left: 0;
+	left: 10px;
+}
+#navTip.nw:before, #navTip.sw:before {
+	border-left: 10px solid transparent;
+	border-right: 0;
+	right: 10px;
+}
+#navTip.ne:before, #navTip.nw:before {
+	border-top: 10px solid #627FC1;
+	bottom: -10px;
+}
+#navTip.se:before, #navTip.sw:before {
+	border-bottom: 10px solid #627FC1;
+	top: -10px;
+}
+#navTip.nw-alt:before, #navTip.ne-alt:before,
+#navTip.sw-alt:before, #navTip.se-alt:before {
+	border-top: 10px solid #C05D4A;
+	bottom: -10px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	left: 10px;
+}
+#navTip.ne-alt:before {
+	left: auto;
+	right: 10px;
+}
+#navTip.sw-alt:before, #navTip.se-alt:before {
+	border-top: none;
+	border-bottom: 10px solid #627FC1;
+	bottom: auto;
+	top: -10px;
+}
+#navTip.se-alt:before {
+	left: auto;
+	right: 10px;
+}
+
+
+footer {
+    background: #627FC1;
+    color: black;
+    padding 2em 2em 2em 2em;
+}
+h1 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+div.social-btn {
+    display: block;
+    width: 665px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.social-btn a {
+    text-decoration: none;
+}
+div.social-btn div {
+    width: 130px;
+    display: inline-block;
+    float: left;
+    height: 120px;
+    line-height: 120px;
+    color: #0d2474;
+    margin-right: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-shadow:0px 0px 2px #000;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-bottom: 50px;
+}
+div.social-btn a:last-child div {
+    margin-right: 0;
+}
+div.social-btn div:hover, div.social-btn div:active {
+    height: 135px;
+    padding-top: 15px;
+}
+i {
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+div.face span, div.twi span, div.in span,{
+    position: absolute;
+    left: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    width: 100px;
+    padding: 0px 10px;
+    opacity: 0;
+    -moz-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+    line-height: 110px;
+    font-size: 20px;
+}
+div.social-btn div:hover i  {
+    opacity: 0;
+}
+div.social-btn div:hover span {
+    opacity: 1;
+}
+div.face {
+     background: #f2eeef;
+    -webkit-box-shadow: 0px 1px 0px #627FC1;
+    -moz-box-shadow: 0px 1px 0px #627FC1;
+    box-shadow: 0px 4px 0px #627FC1;
+    position: relative;
+}
+
+div.twi {
+     background: #f2eeef;
+    -webkit-box-shadow: 0px 2px 0px #627FC1;
+    -moz-box-shadow: 0px 2px 0px #627FC1;
+    box-shadow: 0px 4px 0px #627FC1;
+    position: relative;
+}
+div.in {
+    background: #f2eeef;
+    -webkit-box-shadow: 0px 2px 0px #627FC1;
+    -moz-box-shadow: 0px 2px 0px #627FC1;
+    box-shadow: 0px 4px 0px #627FC1;
+    position: relative;
+}
+div.pin {
+    background: #f2eeef;
+    -webkit-box-shadow: 0px 2px 0px #627FC1;
+    -moz-box-shadow: 0px 2px 0px #627FC1;
+    box-shadow: 0px 4px 0px #627FC1;
+    position: relative;
+   
+}
+ 
+ }

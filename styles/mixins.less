@@ -1,0 +1,19 @@
+// out: null
+
+
+/* 
+
+/* Parametric mixins for font attributes */
+
+.headerFontAttributes(@font-family; @fontColor; @fontSize;) {
+    font-family: @font-family; //this uses our font family
+    color: @fontColor; // this uses our font color
+    font-size: @fontSize; // this uses our font size
+    font-weight: bold; // this uses no arguments... not everything has to be dynamic!
+}
+
+ .textStyling(@font-family; @fontColor; @fontSize) {
+    font-family: @font-family; //this uses our font family
+     color: @fontColor; // this uses our font color
+    font-size: @fontSize; // this uses our font size
+}
