@@ -14,7 +14,7 @@ Programmer: Jeanie Housden
        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Nifty Travel About</title>
+        <title>Contact Nifty</title>
       
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -23,7 +23,7 @@ Programmer: Jeanie Housden
         <link href="styles/grid.css" rel="stylesheet" type="text/css">
         <link href="styles/style.css" rel="stylesheet" type="text/css">
 
-  
+
         
 </head>
 
@@ -55,44 +55,54 @@ Programmer: Jeanie Housden
 <div class="col span_1_of_2">
 <ul>
 <li>
-<h2>Contact Us</h2>    
+<h2>Contact Us</h2>
+<h5>Please fill out this form to inquire about booking a tour!</h5>
+
 <div id="form-main">
   <div id="form-div">
-    <form class="form" id="form1">
       
+     <form action="contact_process.php" method="post" name="contact" id="contact">
       <p class="name">
         <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
       </p>
       
+     <p class="date">
+        <input name="date" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Date of Trip Desired" id="date" />
+      </p>
+         
+         
+         
      <p class="destination">
         <input name="destination" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Destination" id="destination" />
       </p>
-        
-        
+      
       <p class="email">
         <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
       </p>
       
       <p class="text">
-        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comments"></textarea>
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
       </p>
+      
       
       <div class="submit">
         <input type="submit" value="SEND" id="button"/>
         <div class="ease"></div>
       </div>
-         
     </form>
-    </div>
+   </div>
     </div>
     </li>
     </ul>
     </div>
+  
+  
     
     <div class="col span_1_of_2">
    <ul>
    <li>
     <h2>Nifty Social</h2>
+    <h5>Check out our Facebook and Twitter accounts and stop by our pages to say hi!</h5>
     </li>
     <li>
     <script src="//assets.juicer.io/embed.js" type="text/javascript"></script>
@@ -120,6 +130,7 @@ Programmer: Jeanie Housden
     <li><a href="https://twitter.com/niftytours" target="_blank"><div class="twitter-hover social-slide"></div></a>	
     <a href="https://www.facebook.com/NiftyTours/" target="blank"><div class="facebook-hover social-slide"></div></a>
     <a href="https://www.linkedin.com/company/portland-community-college" target="_blank"><div class="linkedin-hover social-slide"></div></a>
+     <li> Site Design: Jeanie Whelan&copy; 2017 jeanie@whelancollaborative.com</li>
     </ul>  
      </div>
     
